@@ -1,59 +1,75 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Monthsary Letter</title>
-</head>
-
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Monthsary Letter</title>
 <style>
-	body {
-	margin: auto;
-	padding: 0px;
-	background-color: #FADCD4;
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FADCD4;
+    font-family: Arial, sans-serif;
 }
-#cont{
-		top: 60px;
-	padding: 5px;
-	border: 5px;
-	width: auto;
-	
-	text-align: auto;
-	margin-left: 150px;
-	margin-right: 150px;
-	background-color: #FFFFF0;
-	align-content: center;
-	position: relative;
-	box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
-	}
-#p1, #p2{
-text-align: center;
+
+/* Container */
+#cont {
+    margin: 5vh auto;          /* vertical spacing relative to viewport */
+    padding: 2rem;             /* scales with font size */
+    max-width: 90%;            /* responsive width */
+    background-color: #FFFFF0;
+    text-align: center;
+    box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.5);
+    border-radius: 0.5rem;
 }
-#back{
-	position: relative;
-	left: 500px;
-	top: 30px;
-	border-radius: 8px;
-	padding: 5px;
-	background-color: lightblue;
-	display: inline-block;
-	font-size: 30px;
-	color: black;
+
+/* Paragraphs */
+#p1, #p2 {
+    text-align: center;
+    margin: 1rem 0;
+    font-size: 1.2rem;        /* responsive font size */
+}
+
+/* Back button */
+#back {
+    display: inline-block;
+    padding: 0.8rem 2rem;     /* relative padding */
+    font-size: 1.5rem;        /* relative font size */
+    border-radius: 0.5rem;
+    background-color: lightblue;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0 0.2rem 0.4rem rgba(0,0,0,0.4);
+    transition: transform 0.2s;
+}
+
+#back:hover {
+    transform: scale(1.05);
+}
+
+/* Optional: Media query for very small screens */
+@media (max-width: 480px) {
+    #back {
+        font-size: 1.2rem;
+        padding: 0.6rem 1.5rem;
+    }
+    #p1, #p2 {
+        font-size: 1rem;
+    }
 }
 </style>
-
+</head>
 <body>
 <div id="cont">
-	<p id="p1">
-		walaaaa, walang ayawan dito >:(
-	</p>
-	<p id="p2">Sige na balik ka sa question HAHAHAHA</p>
+    <p id="p1">
+        walaaaa, walang ayawan dito >:(
+    </p>
+    <p id="p2">
+        Sige na balik ka sa question HAHAHAHA
+    </p>
 
-	<a href="index.html">
-<p id="back">Back</p>
-</a>
+    <a href="index.html" id="back">Back</a>
 </div>
-
 </body>
 </html>
-
