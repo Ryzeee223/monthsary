@@ -1,94 +1,82 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Mothsary Letter</title>
-	<style>
-		body{
-	margin: auto;
-	padding 0px;
-	background-color: #FADCD4;
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mothsary Letter</title>
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FADCD4;
+    font-family: Arial, sans-serif;
 }
 
-	#label{
-		text-align: center;
-		padding: 5px;
-	margin: 5px;
-	border: 10px;
-	background-color: #CD5C5C;
-	}
+#label {
+    text-align: center;
+    padding: 10px;
+    margin: 5px;
+    background-color: #CD5C5C;
+    color: white;
+}
 
-	#cont1{
-		top: 60px;
-	padding: 5px;
-	border: 5px;
-	
-	height: 400px;
-	text-align: auto;
-	margin-left: 150px;
-	margin-right: 150px;
-	background-color: #FFFFF0;
-	align-content: center;
-	position: relative;
-	box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
-	}
+#cont1 {
+    margin: 60px auto;
+    padding: 20px;
+    max-width: 800px;
+    height: 400px;
+    background-color: #FFFFF0;
+    text-align: center;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
-	#mainlbl {
-		top: -100px;
-		position: relative;
-		text-align: center;
-	}
+#mainlbl {
+    margin-bottom: 30px;
+    font-size: 28px;
+}
 
-	#yes {
-		box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
-		padding: 5px 10px;
-		border-radius: 5px;
-		background-color: lightblue;
-		position: relative;
-		text-align: center;
-		display: inline-block;
-		top: 1px;
-		right: -30px;
-		font-size:25px;
-		color: black;
+.buttons {
+    display: flex;
+    gap: 20px; /* space between buttons */
+    flex-wrap: wrap; /* allow wrapping on small screens */
+    justify-content: center;
+}
 
-	}
+button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 25px;
+    cursor: pointer;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+    border: none;
+    color: black;
+}
 
-	#no {
-		box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
-		padding: 10px 20px;
-		border-radius: 5px;
-		background-color: red;
-		font-size:25px;
-		display: inline-block;
-		position: relative;
-		text-align: center;
-		top: 1px;
-		left: 840px;
-		color: black;
-		
-	}
+#yes {
+    background-color: lightblue;
+}
 
-	</style>
+#no {
+    background-color: red;
+}
+</style>
 </head>
-<header id="headsign">
-		<h1 id="label">Monthsary Letter</h1>
-	</header>
 <body>
+<header id="headsign">
+    <h1 id="label">Monthsary Letter</h1>
+</header>
+
 <div id="cont1">
-	<h1 id="mainlbl">Mahal mo pa ba ako?</h1>
-
-
-	<a href="Main.html">
-	<p id="yes">Oo <br> Naman!</p>
-	</a>
-
-
-	<a href="choice2.html">
-	<p id="no">Hindi, <br> ayaw na kita!</p>
-	</a>
+    <h1 id="mainlbl">Mahal mo pa ba ako?</h1>
+    <div class="buttons">
+        <a href="Main.html"><button id="yes">Oo<br>Naman!</button></a>
+        <a href="choice2.html"><button id="no">Hindi,<br>ayaw na kita!</button></a>
+    </div>
 </div>
 </body>
-
 </html>
+
